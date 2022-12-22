@@ -1,1 +1,0 @@
-# AndreyVindetta.github.io
