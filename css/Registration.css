@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Comfortaa;
+    background: rgb(27, 24, 24);
+    color: white;
+    min-width: 1500px;
+}
+header, nav, section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+::-webkit-scrollbar 
+{
+    width: 15px;
+}
+body::-webkit-scrollbar-track{
+    background-color: rgba(75, 74, 73, 0.416);    /* цвет плашки */
+    border: 3px solid rgba(75, 74, 73, 0.416);  /* padding вокруг плашки */
+}
+::-webkit-scrollbar-thumb
+{
+    background: rgba(101, 98, 96, 0.416);
+    border: 0.25vmin solid rgba(101, 98, 96, 0.416);
+}
+::-webkit-scrollbar-thumb:hover
+{
+    background: rgba(255,  0.5);
+}
+/* ========== header ==========*/
+header {
+    width: 100%;
+    padding: 1em 8em;
+    background: rgb(16, 16, 16);
+    box-shadow: 0 5px 20px 5px rgb(14, 14, 14);
+    justify-content: space-between;
+}
+#logo {
+    width: 10vmin;
+    height: 10vmin;
+    transition: 0.3s;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#logo:hover {
+    transform: scale(1.2);
+}
+nav {
+    justify-content: space-between;
+    width: max-content;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 2vmin 3vmin;
+    border: 0.1vmin solid transparent;
+    border-radius: 0.3em;
+    transition: 0.3s;
+}
+nav a:hover {
+    border: 1px solid rgb(255, 149, 0);
+}
+form {
+    position: relative;
+    width: 50vmin;
+    margin: 0 auto;
+}
+.d1 {
+    background: rgb(16, 16, 16);
+}
+.d1 input {
+    width: 100%;
+    height: 42px;
+    padding-left: 10px;
+    border: 2px solid rgb(255, 149, 0);
+    border-radius: 5px;
+    outline: none;
+    background: rgb(16, 16, 16);
+    color: rgb(255, 255, 255);
+}
+#acc {
+    height: 7.5vmin;
+    width: 7.5vmin;
+}
+/* ---------- Menu ---------- */
+section{
+    display: flex;
+    height: 100vmin;
+    min-width: 1500px;
+}
+h1{
+    cursor: help;
+    margin: 0;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    border-bottom: 3px solid rgb(255, 149, 0);
+}
+section form{
+    margin: 0 auto;
+    background: #2b282c;
+    border-radius: 10px;
+    width: 450px;
+    height: 500px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0,8);
+}
+.group{
+    margin: 10px;
+    padding: 5px;
+}
+section label{
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+section input{
+    margin-top: 10px;
+    height: 40px;
+    width: 400px;
+    border-radius: 20px/20px;
+    border: none;
+    box-shadow: 0 5px 20px 5px rgb(14, 14, 14);
+    padding-left: 10px;
+    font-size: 20px;
+}
+section button{
+    margin-left: 110px;
+    font-family: Comfortaa;
+    cursor: pointer;
+    padding: 10px 30px;
+    height: 50px;
+    color: #fff;
+    background: linear-gradient(45deg, rgb(255, 149, 0), rgb(81, 0, 255));
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.8vmin;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0,8);
+}
+section button:hover{
+    background: linear-gradient(45deg, rgba(255, 149, 0, 0.829), rgba(81, 0, 255, 0.823));
+    opacity: .80;
+    font-weight: bold;
+    transform: scale(1.01);
+    justify-content: center;
+}
+/* ---------- Footer ----------- */
+footer{
+    display: flex;
+    width: 100%;
+    height:auto;
+    background: rgb(16, 16, 16);
+    padding: 3em;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.social_seti{
+    justify-content: flex-end;
+}
+footer ul{
+    list-style: none;
+}
+.icons
+{
+    margin-top:2vh;
+    display: grid;
+    grid-template-columns: repeat(4,7vh);
+}
+.icons li a
+{
+    display: inline-block;
+    width:4.8vh;
+    height:4.8vh;
+    background-color:#222831;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border-radius: 0.7vh;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2vh;
+}
+.icons li .facebook:hover
+{
+    color: rgb(49, 88, 161);
+}
+.icons li .twitter:hover
+{
+    color: rgb(52, 123, 255);
+}
+.icons li .instagram:hover
+{
+    color: rgb(213, 18, 247);
+}
+.icons li .youtube:hover
+{
+    color: rgb(255, 0, 0);
+}
+.info
+{
+    position: relative;
+    margin-top: 2vh;
+}
+.info li
+{
+    display: grid;
+    grid-template-columns: 3vh 1fr;
+    margin-bottom: 1.5vh;
+}
+.info a{
+    text-decoration: none;
+    color: #fff;
+}
+footer h2{
+    color: rgb(255, 149, 0);
+}
+.Copyright
+{
+    width: 100%;
+    background: rgb(16, 16, 16);
+    padding: 1.5vh 10vh;
+    text-align: center;
+    color: #fff;
+}
+@media all and (orientation:portrait)
+{
+    footer
+    {
+        height: 60vh;
+        margin-top: 600px;
+    }
+}
+@media all and (orientation:portrait)
+{
+    section form
+    {
+        max-width: 55vh;
+        height: 62vh;
+        margin-top: 400px;
+    }
+}
+@media all and (orientation:portrait)
+{
+    .group
+    {
+        margin-top: 5vmin;
+    }
+}
+@media all and (orientation:portrait)
+{
+    .d1
+    {
+        width: 50%;
+    }
+    .d1 input
+    {
+        width: 50%;
+    }
+    #acc{
+        display: flex;
+        justify-content: center;
+    }
+}
